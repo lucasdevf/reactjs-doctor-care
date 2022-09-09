@@ -14,6 +14,7 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 
   ul {
     display: flex;

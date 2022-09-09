@@ -11,6 +11,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   border-radius: 40px;
   padding: 1rem 1.5rem;
   font-size: 0.75rem;
+  font-weight: bold;
 
   color: ${props => props.variant === 'secondary' ?  props.theme['brand-green'] : props.theme['white']};
   background: ${props => props.variant === 'secondary' ?  'transparent' : props.theme['brand-green']};
@@ -19,8 +20,8 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   cursor: pointer;
 
   &:hover {
-    color: ${props => props.variant === 'secondary' ?  props.theme['white'] : props.theme['brand-green']};
-    background: ${props => props.variant === 'secondary' ?  props.theme['brand-green'] : props.theme['white']};
+    color: ${props => props.theme['white']};
+    background: ${props => props.variant === 'secondary' ?  props.theme['brand-green'] : props.theme['brand-green-hover']};
   }
 
 `
